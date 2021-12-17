@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import ena from './wajdi-ouaili.jpg';
 import './App.css';
-
+import ProfileComponent from './components/ProfileComponent';
 function App() {
+  const fullname="Wajdi Ouaili"
+
+  const hundlename = () => {
+    return alert(`hello ${fullname}`)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Aslema nes lkoool </h1>
+      <ProfileComponent handle={hundlename} fullName={fullname} bio='salamoualaykom' profession='etudiant'>
+          {ena}
+        </ProfileComponent>
     </div>
   );
 }
